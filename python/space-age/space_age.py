@@ -10,9 +10,10 @@ class SpaceAge:
                         'Neptune': 164.79132}
         self.earthYearInSecond = 31557600
         self.seconds = seconds
+        self.on_earth = lambda : round(self.seconds / self.earthYearInSecond / self.convertions['Earth'], 2)
 
-    def on_earth(self):
-        return round(self.seconds / self.earthYearInSecond / self.convertions['Earth'], 2)
+    #def on_earth(self):
+    #    return round(self.seconds / self.earthYearInSecond / self.convertions['Earth'], 2)
     def on_mercury(self):
         return round(self.seconds / self.earthYearInSecond / self.convertions['Mercury'], 2)
     def on_venus(self):
