@@ -2,3 +2,4 @@
 python/exercism.exe
 teste.py
 *.json
+*.pyc
